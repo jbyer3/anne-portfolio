@@ -1,19 +1,18 @@
 <template>
-  <div class="home">
+  <div class="about">
+    <h1>This is a recordings page</h1>
     <Frontpage/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import Construction from '@/components/Construction.vue'
 import Frontpage from '@/components/Frontpage.vue'
 
 export default {
-  name: 'home',
+  name: 'recordings',
   components: {
     Frontpage
-    // Construction
   }
 }
 </script>

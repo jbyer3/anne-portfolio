@@ -1,6 +1,6 @@
 <template>
   <div>
-  <div class="nav">
+  <!-- <div class="nav">
     <div class="nav-left">
       <h1 id="hero-name">anne pengilly</h1>
       <h4>collaborative pianist</h4>
@@ -10,48 +10,20 @@
       <a href=""><h3>recordings</h3></a>
       <a href=""><h3>info?</h3></a>
     </div>
-  </div> 
+  </div>  -->
   <div class="page">
-    <div class="photo-placeholder">
-    </div>
-
     <div class="testimonials">
       <div class="testimonial testimonial-one">
         dis mah blurp one
       </div>
-      <!-- <div class="testimonial testimonial-two">
-        dis mah blurp two
-      </div>
-      <div class="testimonial testimonial-three">
-        dis mah blurp three
-      </div>
-      <div class="testimonial testimonial-four">
-        dis mah blurp four
-      </div>
-      <div class="testimonial testimonial-five">
-        dis mah blurp five
-      </div>
-      <div class="testimonial testimonial-six">
-        dis mah blurp six
-      </div>
-      <div class="testimonial testimonial-seven">
-        dis mah blurp seven 
-      </div>
-      <div class="testimonial testimonial-eight">
-        dis mah blurp eight
-      </div>
-      <div class="testimonial testimonial-nine">
-        dis mah blurp nine
-      </div> -->
-
       <div class="call-to-action">
         <form action="/">
           <div class="form-item">
-            <label for="name">Name!</label>
+            <label for="name">Name</label>
             <input type="text" name="name" id="name">
           </div>
           <div class="form-item">
-            <label for="email">Email!</label>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email">
           </div>
           <div class="form-item">
