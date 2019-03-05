@@ -1,19 +1,25 @@
 <template>
   <div class="home">
-    <Construction/>
+    <h1>homepagio</h1>
+    <SplashPage/>
+    <CallToAction/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-import Construction from '@/components/Construction.vue'
+// import Construction from '@/components/Construction.vue'
+// import Frontpage from '@/components/Frontpage.vue'
+import SplashPage from '@/components/SplashPage.vue'
+import CallToAction from '@/components/CallToAction.vue'
 
 export default {
   name: 'home',
   components: {
-    // HelloWorld
-    Construction
+    // Frontpage,
+    SplashPage,
+    CallToAction
+    // Construction
   }
 }
 </script>

@@ -1,18 +1,23 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <Frontpage/>
+    <Biography/>
+    <CallToAction/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Frontpage from '@/components/Frontpage.vue'
+// import Frontpage from '@/components/Frontpage.vue'
+import CallToAction from '@/components/CallToAction.vue'
+import Biography from '@/components/Biography.vue'
 
 export default {
-  name: 'home',
+  name: 'about',
   components: {
-    Frontpage
+    CallToAction,
+    Biography
+    // Frontpage
   }
 }
 </script>
