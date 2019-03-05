@@ -25,30 +25,6 @@
 </template>
 
 <style lang="scss" scoped>
-// html, body {
-//   padding: 0;
-//   margin: 0;
-//   box-sizing: border-box;
-//   font-family: 'Roboto', sans-serif;
-//   background: #dad8f3;
-
-// }
-
-// a {
-//   text-decoration: none;
-//   color: rgb(84, 137, 203);
-
-// }
-
-// a:hover {
-//   color: rgb(213, 85, 187)
-// }
-
-// .page {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
 
 .call-to-action form {
   display: flex;
