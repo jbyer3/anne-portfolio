@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <img src="@/assets/business_card.jpg" alt="business card image"> 
+    <!-- <img src="@/assets/business_card.jpg" alt="business card image">  -->
   </div>
 </template>
 
