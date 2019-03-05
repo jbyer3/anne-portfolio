@@ -1,35 +1,27 @@
 <template>
   <div class="page">
-    <!-- <img src="@/assets/business_card.jpg" alt="business card image">  -->
+    <img src="@/assets/business_card.jpg" alt="business card image">
+    <div class="img-text">
+      <h1>anne pengilly</h1>
+      <h3>{pianist}</h3>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SplashPage',
+  name: "SplashPage"
   // props: {
   //   msg: String
   // }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-// h3 {
-//   margin: 40px 0 0;
-// }
-// ul {
-//   list-style-type: none;
-//   padding: 0;
-// }
-// li {
-//   display: inline-block;
-//   margin: 0 10px;
-// }
-// a {
-//   color: #42b983;
-// }
+
 img {
-  width: 100%;
+  filter: grayscale(0.88);
+  width: 63%;
 }
 </style>

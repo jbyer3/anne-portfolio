@@ -14,6 +14,7 @@
       </div>
     </div>
     <router-view/>
+    <footer>copyright jason byer</footer>
   </div>
 </template>
 
@@ -71,5 +72,11 @@
       }
     }
   }
+}
+footer {
+  background: $indigo9;
+  color: $indigo0;
+  margin-top: 10rem;
+  padding: 1.3rem;
 }
 </style>
