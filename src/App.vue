@@ -21,6 +21,7 @@
 @import "./public/scss/_colors.scss";
 // @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,7 +39,7 @@
   background: $cyan9;
   // color: $lime1;
   color: $indigo0;
-  border-bottom: $indigo6 0.3rem solid;
+  border-bottom: $yellow5 0.3rem solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,10 +63,11 @@
     a {
       font-weight: bold;
       // color: #2c3e50;
-      color: $gray9;
+      // color: $gray9;
+      color: $indigo0;
       &.router-link-exact-active {
         // color: #42b983;
-        color: $indigo6;
+        color: $yellow5;
       }
     }
   }
