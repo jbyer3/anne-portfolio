@@ -2,7 +2,7 @@
   <div class="page">
     <div class="call-to-action">
       <h1>Contact me for a gig</h1>
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="https://quirky-jones-a367a0.netlify.com/#/">
           <input type="hidden" name="form-name" value="contact" />
         <div class="form-item">
           <label for="name">name:</label>
