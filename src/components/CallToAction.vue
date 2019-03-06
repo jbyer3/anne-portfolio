@@ -2,14 +2,14 @@
   <div class="page">
     <div class="call-to-action">
       <h1>Contact me for a gig</h1>
-      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form v-on:submit.prevent="onSubmit" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
         <div class="form-item">
           <label for="name">name:</label>
-          <input class="text-inputs" type="text" name="name" id="name">
+          <input class="text-inputs" type="text" name="name" id="name" required>
         </div>
         <div class="form-item">
           <label for="email">email:</label>
-          <input class="text-inputs" type="email" name="email" id="email">
+          <input class="text-inputs" type="email" name="email" id="email" required>
         </div>
         <div class="form-item">
           <label for="phone-number">phone:</label>
@@ -17,7 +17,7 @@
         </div>
         <div class="form-item">
           <label for="cta-message">message:</label>
-          <textarea class="text-inputs" type="text" name="cta-message" id="cta-message" rows="15"></textarea>
+          <textarea class="text-inputs" type="text" name="cta-message" id="cta-message" rows="15" required></textarea>
         </div>
         <button type="submit">send me an email</button>
       </form>
