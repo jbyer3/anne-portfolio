@@ -2,7 +2,7 @@
   <div class="page">
     <div class="call-to-action">
       <h1>Contact me for a gig</h1>
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" netlify>
         <div class="form-item">
           <label for="name">name:</label>
           <input class="text-inputs" type="text" name="name" id="name">
@@ -17,7 +17,7 @@
         </div>
         <div class="form-item">
           <label for="cta-message">message:</label>
-          <textarea class="text-inputs" type="text" name="cta-message" id="cta-message"></textarea>
+          <textarea class="text-inputs" type="text" name="cta-message" id="cta-message" rows="15"></textarea>
         </div>
         <button type="submit">send me an email</button>
       </form>
@@ -50,15 +50,15 @@ label {
   margin: 0.2rem;
   // padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
   width: 70%;
   .text-inputs {
-    font-size: 2rem;
+    font-size: 1.2rem;
     border-radius: 0.2em;
-    height: 1em;
+    height: 120%;
   }
 }
 </style>
