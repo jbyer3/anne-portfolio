@@ -2,7 +2,7 @@
   <div class="page">
     <div class="call-to-action">
       <h1>Contact me for a gig</h1>
-      <form v-on:submit.prevent="onSubmit" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form v-on:submit.prevent="onSubmit" method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
         <div class="form-item">
           <label for="name">name:</label>
           <input class="text-inputs" type="text" name="name" id="name" required>
