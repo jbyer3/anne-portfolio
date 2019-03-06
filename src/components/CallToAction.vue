@@ -3,6 +3,7 @@
     <div class="call-to-action">
       <h1>Contact me for a gig</h1>
       <form method="POST" name="contact" netlify data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
         <div class="form-item">
           <label for="name">name:</label>
           <input class="text-inputs" type="text" name="name" id="name" required>
