@@ -14,6 +14,10 @@
       </div>
     </div>
     <router-view/>
+    <footer>
+      <div class="footer-left">copyright jason byer 2019</div>
+      <div class="footer-right">githubsies</div>
+    </footer>
   </div>
 </template>
 
@@ -21,6 +25,10 @@
 @import "./public/scss/_colors.scss";
 // @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+* {
+  box-sizing: border-box;
+}
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -30,6 +38,10 @@
   background: $indigo0;
   // color: #2c3e50;
   color: $indigo9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #nav {
   // padding: 30px;
@@ -70,6 +82,20 @@
         color: $yellow5;
       }
     }
+  }
+}
+footer {
+  box-sizing: border-box;
+  background: $indigo9;
+  color: $indigo0;
+  margin-top: 10rem;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  .footer-left, .footer-right {
+    padding: 20px;
   }
 }
 </style>
