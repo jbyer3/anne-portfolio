@@ -2,23 +2,23 @@
   <div class="page">
     <div class="call-to-action">
       <h1>Contact me for a gig</h1>
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
+      <form action="/" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="onSubmit">
           <input type="hidden" name="form-name" value="contact" />
         <div class="form-item">
           <label for="name">name:</label>
-          <input @input="ev => form.contact = ev.target.value" class="text-inputs" type="text" name="name" id="name" required>
+          <input class="text-inputs" type="text" name="name" id="name" required>
         </div>
         <div class="form-item">
           <label for="email">email:</label>
-          <input @input="ev => form.contact = ev.target.value" class="text-inputs" type="email" name="email" id="email" required>
+          <input class="text-inputs" type="email" name="email" id="email" required>
         </div>
         <div class="form-item">
           <label for="phoneNumber">phone:</label>
-          <input @input="ev => form.contact = ev.target.value" class="text-inputs" type="text" name="phoneNumber" id="phoneNumber">
+          <input class="text-inputs" type="text" name="phoneNumber" id="phoneNumber">
         </div>
         <div class="form-item">
           <label for="ctaMessage">message:</label>
-          <textarea @input="ev => form.contact = ev.target.value" class="text-inputs" type="text" name="ctaMessage" id="ctaMessage" rows="15" required></textarea>
+          <textarea class="text-inputs" type="text" name="ctaMessage" id="ctaMessage" rows="15" required></textarea>
         </div>
         <button type="submit">send me an email</button>
       </form>
@@ -35,26 +35,26 @@ export default {
     }
   }),
   methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join("&")
-    },
-    handleSubmit() {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" }
-      };
-      axios.post(
-        "/",
-        this.encode({
-          "form-name": "contact",
-          ...this.form
-        }),
-        axiosConfig
-      );
-    },
+    // encode(data) {
+    //   return Object.keys(data)
+    //     .map(
+    //       key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+    //     )
+    //     .join("&")
+    // },
+    // handleSubmit() {
+    //   const axiosConfig = {
+    //     header: { "Content-Type": "application/x-www-form-urlencoded" }
+    //   };
+    //   axios.post(
+    //     "/",
+    //     this.encode({
+    //       "form-name": "contact",
+    //       ...this.form
+    //     }),
+    //     axiosConfig
+    //   );
+    // },
     onSubmit: (e)=> {
       console.log(e.srcElement.elements)
       const { name, phoneNumber, email, ctaMessage } = e.srcElement.elements;
