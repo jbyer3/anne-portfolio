@@ -2,8 +2,8 @@
   <div class="page">
     <div class="call-to-action">
       <h1>Contact me for a gig</h1>
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" @submit="onSubmit">
-            <input type="hidden" name="form-name" value="contact" />
+      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
         <div class="form-item">
           <label for="name">name:</label>
           <input class="text-inputs" type="text" name="name" id="name" required>
@@ -13,12 +13,12 @@
           <input class="text-inputs" type="email" name="email" id="email" required>
         </div>
         <div class="form-item">
-          <label for="phone-number">phone:</label>
-          <input class="text-inputs" type="text" name="phone-number" id="phone-number">
+          <label for="phoneNumber">phone:</label>
+          <input class="text-inputs" type="text" name="phoneNumber" id="phoneNumber">
         </div>
         <div class="form-item">
-          <label for="cta-message">message:</label>
-          <textarea class="text-inputs" type="text" name="cta-message" id="cta-message" rows="15" required></textarea>
+          <label for="ctaMessage">message:</label>
+          <textarea class="text-inputs" type="text" name="ctaMessage" id="ctaMessage" rows="15" required></textarea>
         </div>
         <button type="submit">send me an email</button>
       </form>
@@ -33,8 +33,13 @@ export default {
 
   }),
   methods: {
-    onSubmit: ()=> {
-      console.log()
+    onSubmit: (e)=> {
+      console.log(e.srcElement.elements)
+      const { name, phoneNumber, email, ctaMessage } = e.srcElement.elements;
+      console.log('name is: ', name.value)
+      console.log('phoneNumber is: ', phoneNumber.value)
+      console.log('email is: ', email.value)
+      console.log('ctaMessage is: ', ctaMessage.value)
     }
   }
 }
