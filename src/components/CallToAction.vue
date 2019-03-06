@@ -2,7 +2,7 @@
   <div class="page">
     <div class="call-to-action">
       <h1>Contact me for a gig</h1>
-      <form action="/" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="onSubmit">
+      <form action="/" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
         <div class="form-item">
           <label for="name">name:</label>
@@ -55,14 +55,14 @@ export default {
     //     axiosConfig
     //   );
     // },
-    onSubmit: (e)=> {
-      console.log(e.srcElement.elements)
-      const { name, phoneNumber, email, ctaMessage } = e.srcElement.elements;
-      console.log('name is: ', name.value)
-      console.log('phoneNumber is: ', phoneNumber.value)
-      console.log('email is: ', email.value)
-      console.log('ctaMessage is: ', ctaMessage.value)
-    }
+    // onSubmit: (e)=> {
+    //   console.log(e.srcElement.elements)
+    //   const { name, phoneNumber, email, ctaMessage } = e.srcElement.elements;
+    //   console.log('name is: ', name.value)
+    //   console.log('phoneNumber is: ', phoneNumber.value)
+    //   console.log('email is: ', email.value)
+    //   console.log('ctaMessage is: ', ctaMessage.value)
+    // }
   }
 }
 </script>
