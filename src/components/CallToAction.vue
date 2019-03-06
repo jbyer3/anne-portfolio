@@ -3,23 +3,15 @@
     <div class="call-to-action">
       <h1>Contact me for a gig</h1>
       <form action="/" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
-        <div class="form-item">
-          <label for="name">name:</label>
-          <input class="text-inputs" type="text" name="name" id="name" required>
-        </div>
-        <div class="form-item">
-          <label for="email">email:</label>
-          <input class="text-inputs" type="email" name="email" id="email" required>
-        </div>
-        <div class="form-item">
-          <label for="phoneNumber">phone:</label>
-          <input class="text-inputs" type="text" name="phoneNumber" id="phoneNumber">
-        </div>
-        <div class="form-item">
-          <label for="ctaMessage">message:</label>
-          <textarea class="text-inputs" type="text" name="ctaMessage" id="ctaMessage" rows="15" required></textarea>
-        </div>
+        <input type="hidden" name="form-name" value="contact" />
+        <label for="name">name:</label>
+        <input class="text-inputs" type="text" name="name" id="name" required>
+        <label for="email">email:</label>
+        <input class="text-inputs" type="email" name="email" id="email" required>
+        <label for="phoneNumber">phone:</label>
+        <input class="text-inputs" type="text" name="phoneNumber" id="phoneNumber">
+        <label for="ctaMessage">message:</label>
+        <textarea class="text-inputs" type="text" name="ctaMessage" id="ctaMessage" rows="15" required></textarea>
         <button type="submit">send me an email</button>
       </form>
     </div>
