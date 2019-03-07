@@ -2,7 +2,7 @@
   <div class="home">
     <h1>homepagio</h1>
     <SplashPage/>
-    <CTAform/>
+    <!-- <CTAform/> -->
     <!-- <CallToAction/> -->
     <!-- <Construction/> -->
   </div>
@@ -12,7 +12,7 @@
 // @ is an alias to /src
 // import Construction from '@/components/Construction.vue'
 import SplashPage from '@/components/SplashPage.vue'
-import CTAform from '@/components/CTAform.vue'
+// import CTAform from '@/components/CTAform.vue'
 // import CallToAction from '@/components/CallToAction.vue'
 
 export default {
@@ -20,7 +20,7 @@ export default {
   components: {
     // Construction,
     SplashPage,
-    CTAform
+    // CTAform
     // CallToAction
   }
 }

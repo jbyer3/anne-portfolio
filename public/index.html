@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title>anne-portfolio-vue</title>
     <style>
-      html, body {
+      html,
+      body {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -16,17 +17,32 @@
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but anne-portfolio-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but anne-portfolio-vue doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      >
     </noscript>
-
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="text" name="phoneNumber" />
-      <textarea name="ctaMessage"></textarea>
-    </form>
-
     <div id="app"></div>
+    <form name="contact2" netlify netlify-honeypot="bot-field">
+      <input type="hidden" name="bot-field">
+      <label for="name">
+        your name:
+        <input type="text" name="name"/>
+      </label>
+      <label for="email">
+        your email:
+        <input type="email" name="email"/>
+      </label>
+      <label for="phoneNumber">
+        your phone:
+        <input type="text" name="phoneNumber"/>
+      </label>
+      <label for="ctaMessage">
+        your message:
+        <textarea name="ctaMessage"></textarea>
+      </label>
+      <button type="submit">submit</button>
+    </form>
     <!-- built files will be auto injected -->
   </body>
 </html>
