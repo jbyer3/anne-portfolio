@@ -3,7 +3,7 @@
     <h1>homepagio</h1>
     <SplashPage/>
     <!-- <CTAform/> -->
-    <!-- <CallToAction/> -->
+    <CallToAction/>
     <!-- <Construction/> -->
   </div>
 </template>
@@ -13,7 +13,7 @@
 // import Construction from '@/components/Construction.vue'
 import SplashPage from '@/components/SplashPage.vue'
 // import CTAform from '@/components/CTAform.vue'
-// import CallToAction from '@/components/CallToAction.vue'
+import CallToAction from '@/components/CallToAction.vue'
 
 export default {
   name: 'home',
@@ -21,7 +21,7 @@ export default {
     // Construction,
     SplashPage,
     // CTAform
-    // CallToAction
+    CallToAction
   }
 }
 </script>
