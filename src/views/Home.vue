@@ -2,7 +2,8 @@
   <div class="home">
     <h1>homepagio</h1>
     <SplashPage/>
-    <CallToAction/>
+    <CTAform/>
+    <!-- <CallToAction/> -->
     <!-- <Construction/> -->
   </div>
 </template>
@@ -11,14 +12,16 @@
 // @ is an alias to /src
 // import Construction from '@/components/Construction.vue'
 import SplashPage from '@/components/SplashPage.vue'
-import CallToAction from '@/components/CallToAction.vue'
+import CTAform from '@/components/CTAform.vue'
+// import CallToAction from '@/components/CallToAction.vue'
 
 export default {
   name: 'home',
   components: {
     // Construction,
     SplashPage,
-    CallToAction
+    CTAform
+    // CallToAction
   }
 }
 </script>
